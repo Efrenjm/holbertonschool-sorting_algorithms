@@ -8,10 +8,10 @@
  */
 void swap(int *a, int *b)
 {
-    int temp = *a;
+	int temp = *a;
 
-    *a = *b;
-    *b = temp;
+	*a = *b;
+	*b = temp;
 }
 /**
  * selection_sort - Perform selection sort
