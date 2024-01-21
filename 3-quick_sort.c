@@ -40,9 +40,11 @@ int partition(int *array, int low, int high, size_t size)
 	}
 
 	i++;
-	swap(&array[i], &array[high]);
-	if (i != high)
+	if (i != high && array[i] != array[high])
+	{
+		swap(&array[i], &array[high]);
 		print_array(array, size);
+	}
 	return (i);
 }
 /**
